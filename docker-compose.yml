@@ -1,0 +1,28 @@
+worker:
+  build: .
+  dockerfile: Dockerfile.worker
+  environment:
+    MAX_CPU_CORES: 1
+  links:
+   - server
+
+server:
+  build: .
+  dockerfile: Dockerfile.server
+  hostname: server
+  ports:
+   - "5672:5672" # RabbitMQ
+   - "6379:6379" # Redis
+  environment:
+    MAX_CPU_CORES: 1
+    # i sve ostale promenljive koje koristimo
+    THETA_RESOLUTION: 20
+    L1: 1.0
+    L2: 1.0
+    M1: 1.0
+    M2: 1.0
+    TMAX: 30.0
+    DT: 0.01
+    RESULTS_PATH: "results.csv"
+  volumes:
+   - /tmp/results3:/results

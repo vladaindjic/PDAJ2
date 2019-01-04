@@ -1,0 +1,100 @@
+ 1717  gedit main.c Makefile &
+ 1718  make openacc 
+ 1719  gedit main.c Makefile &
+ 1720  make openacc 
+ 1721  make pgi-host-openacc 
+ 1722  make pgi-gpu-openacc 
+ 1723  pgcc -acc -ta=tesla -Minfo -o main main.c
+ 1724  pgcc -acc -ta=tesla -o main main.c
+ 1725  pgcc -acc -ta=tesla -Minfo -o main main.c
+ 1726  pgcc -acc -ta=tesla -Minfo main.c
+ 1727  vi main.c 
+ 1728  pgcc -acc -ta=tesla -Minfo main.c
+ 1729  ./main 
+ 1730  ll
+ 1731  pgcc -acc -ta=tesla -Minfo main.c
+ 1732  ./a.out 
+ 1733  gedit a.out 
+ 1734  vi a.out 
+ 1735  ll
+ 1736  make pgi-gpu-openacc 
+ 1737  du -hcs
+ 1738  du -hcs *
+ 1739  mc
+ 1740  10
+ 1741  cd pgi/
+ 1742  ll
+ 1743  ls -la
+ 1744  su adam
+ 1745  cd pgi/
+ 1746  ll
+ 1747  cd ..
+ 1748  xdg-open .
+ 1749  rm -rf pgi
+ 1750  ll
+ 1751  rm -rf pgi/
+ 1752  pgi
+ 1753  ls -la pgi/
+ 1754  mc
+ 1755  ll
+ 1756  rm -rf pgi/
+ 1757  ll
+ 1758  su adam
+ 1759  shutdown now
+ 1760  cd ..
+ 1761  docker ps
+ 1762  docker exec -it pendulum_worker_1 /bin/bash
+ 1763  docker exec -it pendulum_server_1 /bin/bash
+ 1767  ./pycharm.sh
+ 1768  cd ..
+ 1769  ll
+ 1770  cd ..
+ 1771  ll
+ 1773  ll
+ 1775  ll
+ 1776  cd ..
+ 1777  ll
+ 1778  cd pendulum/
+ 1779  ll
+ 1780  docker-compose up
+ 1782  docker-compose up
+ 1783  docker-compose down
+ 1784  docker-compose up
+ 1785  docker-compose down
+ 1786  ll
+ 1787  docker-compose up
+ 1788  ll c
+ 1789  docker-compose up --help
+ 1790  docker-compose up --force-recreate
+ 1791  docker-compose up --build
+ 1792  docker-compose down
+ 1793  docker exec -it pendulum_worker_1 /bin/bash
+ 1794  shutdown now
+ 1795  docker ps
+ 1796  docker -it pendulum_server_1 /bin/bash
+ 1797  docker exec -it pendulum_server_1 /bin/bash
+ 1798* docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log | lessecho 
+ 1799  docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1800  docker exec -it pendulum_server_1 /bin/bash
+ 1801  ll
+ 1802  less Vagrantfile 
+ 1803  docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1804  echo $UID
+ 1805  echo $GID
+ 1806  man uid
+ 1807  man -k uid
+ 1808  man -k gid
+ 1809  man getgid
+ 1810  docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1811  watch -n 1 -d docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1812  docker exec -it pendulum_server_1 celery events
+ 1813  docker exec -it pendulum_server_1 bash
+ 1814  docker exec -it pendulum_server_1 celery events
+ 1815  watch -n 1 -d docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1816  docker exec -it pendulum_server_1 celery events
+ 1817  watch -n 1 -d docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1818  docker exec -it pendulum_server_1 celery events
+ 1819  watch -n 1 -d docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log 
+ 1820  docker exec -it pendulum_server_1 cat /var/log/supervisor/celery.log | less
+ 1821  docker exec -it pendulum_server_1 less /var/log/supervisor/celery.log
+ 1822  history

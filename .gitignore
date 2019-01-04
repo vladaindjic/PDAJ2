@@ -1,0 +1,10 @@
+syntax: glob
+.vagrant/
+*.pyc
+_developer_experiments/
+
+
+.hg/
+.hgignore
+.hgtags
+.idea/
